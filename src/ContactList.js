@@ -2,6 +2,7 @@ import React from 'react'
 import Contact from './Contact.js'
 import Button from 'react-bootstrap/Button'
 import Table from 'react-bootstrap/Table'
+import faker from '@faker-js/faker'
 
 class ContactList extends React.Component {
   constructor(props) {
