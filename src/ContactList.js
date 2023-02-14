@@ -2,7 +2,7 @@ import React from 'react'
 import Contact from './Contact.js'
 import Button from 'react-bootstrap/Button'
 import Table from 'react-bootstrap/Table'
-import faker from '@faker-js/faker'
+import { faker } from '@faker-js/faker' 
 
 class ContactList extends React.Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class ContactList extends React.Component {
   }
 
   handleGenerateContact() {
-    alert('Creating a new contact')
+    alert(`Hello ${faker.name.firstName()} ${faker.name.lastName()}`)
   }
 
   headings() {
