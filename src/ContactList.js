@@ -23,7 +23,7 @@ class ContactList extends React.Component {
   }
 
   handleGenerateContact() {
-    alert(`Hello ${faker.name.firstName()} ${faker.name.lastName()}`)
+    this.contactList.push(this.generateContact())
   }
 
   headings() {
