@@ -7,6 +7,7 @@ import { faker } from '@faker-js/faker'
 class ContactList extends React.Component {
   constructor(props) {
     super(props)
+    this.ContactList = []
     this.handleGenerateContact = this.handleGenerateContact.bind(this)
   }
 
