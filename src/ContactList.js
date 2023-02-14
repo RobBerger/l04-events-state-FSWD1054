@@ -11,6 +11,17 @@ class ContactList extends React.Component {
     this.handleGenerateContact = this.handleGenerateContact.bind(this)
   }
 
+  generateContact() {
+    let firstName = faker.name.firstName()
+    let lastName = faker.name.lastName()
+    return {
+      first_name: firstName,
+      last_name: lastName,
+      email: faker.internet.exampleEmail(firstName, lastName),
+      phone: faker.phone.phoneNumber()
+    }
+  }
+
   handleGenerateContact() {
     alert(`Hello ${faker.name.firstName()} ${faker.name.lastName()}`)
   }
