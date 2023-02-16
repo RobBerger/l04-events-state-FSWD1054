@@ -18,7 +18,7 @@ class ContactList extends React.Component {
       first_name: firstName,
       last_name: lastName,
       email: faker.internet.exampleEmail(firstName, lastName),
-      phone: faker.phone.phoneNumber()
+      phone: faker.phone.number()
     }
   }
 
@@ -32,7 +32,7 @@ class ContactList extends React.Component {
   }
 
   contacts() {
-    return this.contactList.map((contact) => <Contact contact={contact} />)
+    // return this.contactList.map((contact) => <Contact contact={contact} />)
   }
 
   render() {
