@@ -32,7 +32,7 @@ class ContactList extends React.Component {
   }
 
   contacts() {
-    // return this.contactList.map((contact) => <Contact contact={contact} />)
+    return this.contactList.map((contact) => <Contact contact={contact} />)
   }
 
   render() {
